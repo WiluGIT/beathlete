@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		84B8ED6923A8FCF900A51DE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */; };
 		84B8ED6C23A8FCF900A51DE6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED6B23A8FCF900A51DE6 /* SceneDelegate.m */; };
-		84B8ED6F23A8FCF900A51DE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED6E23A8FCF900A51DE6 /* ViewController.m */; };
 		84B8ED7223A8FCF900A51DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7023A8FCF900A51DE6 /* Main.storyboard */; };
 		84B8ED7523A8FCF900A51DE6 /* beathlete.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED7323A8FCF900A51DE6 /* beathlete.xcdatamodeld */; };
 		84B8ED7723A8FCFC00A51DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7623A8FCFC00A51DE6 /* Assets.xcassets */; };
 		84B8ED7A23A8FCFC00A51DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7823A8FCFC00A51DE6 /* LaunchScreen.storyboard */; };
 		84B8ED7D23A8FCFC00A51DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED7C23A8FCFC00A51DE6 /* main.m */; };
+		84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */; };
+		84FE9FB523A95FB50072E023 /* PartsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9FB423A95FB50072E023 /* PartsTableViewController.m */; };
+		84FE9FBB23A9645B0072E023 /* ExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9FBA23A9645B0072E023 /* ExercisesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +25,18 @@
 		84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84B8ED6A23A8FCF900A51DE6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		84B8ED6B23A8FCF900A51DE6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		84B8ED6D23A8FCF900A51DE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84B8ED6E23A8FCF900A51DE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84B8ED7123A8FCF900A51DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B8ED7423A8FCF900A51DE6 /* beathlete.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beathlete.xcdatamodel; sourceTree = "<group>"; };
 		84B8ED7623A8FCFC00A51DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B8ED7923A8FCFC00A51DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B8ED7B23A8FCFC00A51DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B8ED7C23A8FCFC00A51DE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84BB5E6D23A983B800262C9B /* ExerciseDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseDetailViewController.h; sourceTree = "<group>"; };
+		84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseDetailViewController.m; sourceTree = "<group>"; };
+		84FE9FB323A95FB50072E023 /* PartsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartsTableViewController.h; sourceTree = "<group>"; };
+		84FE9FB423A95FB50072E023 /* PartsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartsTableViewController.m; sourceTree = "<group>"; };
+		84FE9FB923A9645B0072E023 /* ExercisesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExercisesTableViewController.h; sourceTree = "<group>"; };
+		84FE9FBA23A9645B0072E023 /* ExercisesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExercisesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +73,18 @@
 				84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */,
 				84B8ED6A23A8FCF900A51DE6 /* SceneDelegate.h */,
 				84B8ED6B23A8FCF900A51DE6 /* SceneDelegate.m */,
-				84B8ED6D23A8FCF900A51DE6 /* ViewController.h */,
-				84B8ED6E23A8FCF900A51DE6 /* ViewController.m */,
 				84B8ED7023A8FCF900A51DE6 /* Main.storyboard */,
 				84B8ED7623A8FCFC00A51DE6 /* Assets.xcassets */,
 				84B8ED7823A8FCFC00A51DE6 /* LaunchScreen.storyboard */,
 				84B8ED7B23A8FCFC00A51DE6 /* Info.plist */,
 				84B8ED7C23A8FCFC00A51DE6 /* main.m */,
 				84B8ED7323A8FCF900A51DE6 /* beathlete.xcdatamodeld */,
+				84FE9FB323A95FB50072E023 /* PartsTableViewController.h */,
+				84FE9FB423A95FB50072E023 /* PartsTableViewController.m */,
+				84FE9FB923A9645B0072E023 /* ExercisesTableViewController.h */,
+				84FE9FBA23A9645B0072E023 /* ExercisesTableViewController.m */,
+				84BB5E6D23A983B800262C9B /* ExerciseDetailViewController.h */,
+				84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */,
 			);
 			path = beathlete;
 			sourceTree = "<group>";
@@ -151,9 +161,11 @@
 			files = (
 				84B8ED7D23A8FCFC00A51DE6 /* main.m in Sources */,
 				84B8ED7523A8FCF900A51DE6 /* beathlete.xcdatamodeld in Sources */,
-				84B8ED6F23A8FCF900A51DE6 /* ViewController.m in Sources */,
+				84FE9FBB23A9645B0072E023 /* ExercisesTableViewController.m in Sources */,
 				84B8ED6923A8FCF900A51DE6 /* AppDelegate.m in Sources */,
+				84FE9FB523A95FB50072E023 /* PartsTableViewController.m in Sources */,
 				84B8ED6C23A8FCF900A51DE6 /* SceneDelegate.m in Sources */,
+				84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

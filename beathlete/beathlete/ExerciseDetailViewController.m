@@ -1,0 +1,43 @@
+//
+//  ExerciseDetailViewController.m
+//  beathlete
+//
+//  Created by Admin on 17/12/2019.
+//  Copyright © 2019 Admin. All rights reserved.
+//
+
+#import "ExerciseDetailViewController.h"
+
+@interface ExerciseDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *exerciseNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *exerciseDescriptionLabel;
+
+
+@end
+
+@implementation ExerciseDetailViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if(self.exerciseToShowDetail!=nil){
+        [self fetchExerciseDetails];
+    }
+        
+}
+
+-(void)fetchExerciseDetails{
+    self.exerciseNameLabel.text=self.exerciseToShowDetail.exerciseName;
+    self.exerciseDescriptionLabel.text=self.exerciseToShowDetail.exerciseDescription;
+    [self.exerciseDescriptionLabel sizeToFit];
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

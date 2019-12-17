@@ -45,7 +45,7 @@
         Parts *part4= [[Parts alloc] initWithContext:self.context];
         part4.name=@"Back";
         Parts *part5= [[Parts alloc] initWithContext:self.context];
-        part5.name=@"buttocks";
+        part5.name=@"Buttocks";
         Parts *part6= [[Parts alloc] initWithContext:self.context];
         part6.name=@"Legs";
         

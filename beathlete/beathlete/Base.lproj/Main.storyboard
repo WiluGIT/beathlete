@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WmN-Hf-N4s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WmN-Hf-N4s">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,16 +58,16 @@
             </objects>
             <point key="canvasLocation" x="-58" y="82"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Parts Table View Controller-->
         <scene sceneID="NnP-Ma-D5I">
             <objects>
-                <tableViewController id="C4T-Ul-ko7" sceneMemberID="viewController">
+                <tableViewController id="C4T-Ul-ko7" customClass="PartsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ako-2v-j13">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6hb-nx-ewE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellPart" id="6hb-nx-ewE">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6hb-nx-ewE" id="PqP-3H-uKr">
@@ -75,7 +75,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="J5H-ae-fXB" kind="show" id="hZK-Bg-DCM"/>
+                                    <segue destination="J5H-ae-fXB" kind="show" identifier="ShowPartExercises" id="hZK-Bg-DCM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -90,16 +90,16 @@
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="-632.14285714285711"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Exercises Table View Controller-->
         <scene sceneID="79P-hC-eHz">
             <objects>
-                <tableViewController id="J5H-ae-fXB" sceneMemberID="viewController">
+                <tableViewController id="J5H-ae-fXB" customClass="ExercisesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Wk-Dm-sVw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KeV-ci-UYl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellExercise" id="KeV-ci-UYl">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KeV-ci-UYl" id="OrO-me-uPl">
@@ -107,7 +107,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Hxo-t0-645" kind="show" id="GBm-dY-c61"/>
+                                    <segue destination="Hxo-t0-645" kind="show" identifier="ShowExerciseDetail" id="GBm-dY-c61"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -122,21 +122,46 @@
             </objects>
             <point key="canvasLocation" x="1806" y="-632"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise Detail View Controller-->
         <scene sceneID="Gcg-ck-F6L">
             <objects>
-                <viewController id="Hxo-t0-645" sceneMemberID="viewController">
+                <viewController id="Hxo-t0-645" customClass="ExerciseDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ehu-NC-rVc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHf-iR-y0D">
+                                <rect key="frame" x="20" y="110" width="374" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-Bl-HWg">
+                                <rect key="frame" x="20" y="184" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="YT Tutorial"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jnjnjblkjn;njjnjljbjkbkjlbjbjkbjbjkbjkbjkbljbjbjblbbjbjklbjbjbljb" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqC-4a-YbO">
+                                <rect key="frame" x="0.0" y="237" width="414" height="576"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dzD-Wd-c0N"/>
                     </view>
                     <navigationItem key="navigationItem" id="yF8-BL-nLh"/>
+                    <connections>
+                        <outlet property="exerciseDescriptionLabel" destination="aqC-4a-YbO" id="RgL-t2-nWp"/>
+                        <outlet property="exerciseNameLabel" destination="oHf-iR-y0D" id="3Fz-18-tQC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyP-88-c8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2723" y="-632"/>
+            <point key="canvasLocation" x="2721.739130434783" y="-632.14285714285711"/>
         </scene>
         <!--Exercises-->
         <scene sceneID="HKe-0q-Hbu">

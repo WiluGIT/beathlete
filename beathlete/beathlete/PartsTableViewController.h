@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PartsTableViewController.h
 //  beathlete
 //
 //  Created by Admin on 17/12/2019.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PartsTableViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
