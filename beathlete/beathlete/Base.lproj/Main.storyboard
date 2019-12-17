@@ -141,6 +141,9 @@
                                 <rect key="frame" x="20" y="184" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="YT Tutorial"/>
+                                <connections>
+                                    <action selector="openYouTube:" destination="Hxo-t0-645" eventType="touchUpInside" id="TfA-1m-I3k"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jnjnjblkjn;njjnjljbjkbkjlbjbjkbjbjkbjkbjkbljbjbjblbbjbjklbjbjbljb" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqC-4a-YbO">
                                 <rect key="frame" x="0.0" y="237" width="414" height="576"/>
@@ -157,6 +160,7 @@
                     <connections>
                         <outlet property="exerciseDescriptionLabel" destination="aqC-4a-YbO" id="RgL-t2-nWp"/>
                         <outlet property="exerciseNameLabel" destination="oHf-iR-y0D" id="3Fz-18-tQC"/>
+                        <outlet property="ytLinkButton" destination="bPg-Bl-HWg" id="nMf-Dp-QdV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyP-88-c8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

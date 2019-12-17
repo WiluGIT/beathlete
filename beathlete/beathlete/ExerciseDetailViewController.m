@@ -11,6 +11,7 @@
 @interface ExerciseDetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *exerciseNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *exerciseDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *ytLinkButton;
 
 
 @end
@@ -29,6 +30,11 @@
     self.exerciseNameLabel.text=self.exerciseToShowDetail.exerciseName;
     self.exerciseDescriptionLabel.text=self.exerciseToShowDetail.exerciseDescription;
     [self.exerciseDescriptionLabel sizeToFit];
+}
+- (IBAction)openYouTube:(id)sender {
+    NSURL *url = [NSURL URLWithString:self.exerciseToShowDetail.hyperlink];
+    UIApplication *app = [UIApplication sharedApplication];
+    [app openURL:url];
 }
 /*
 #pragma mark - Navigation
