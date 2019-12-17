@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Exercises" representedClassName="Exercises" syncable="YES" codeGenerationType="class">
+        <attribute name="exerciseDescription" optional="YES" attributeType="String"/>
+        <attribute name="exerciseName" optional="YES" attributeType="String"/>
+        <attribute name="hyperlink" optional="YES" attributeType="String"/>
+        <relationship name="part" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Parts" inverseName="exercises" inverseEntity="Parts"/>
+    </entity>
+    <entity name="Measurments" representedClassName="Measurments" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="measurmentDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Parts" representedClassName="Parts" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercises" inverseName="part" inverseEntity="Exercises"/>
+    </entity>
+    <entity name="Trainings" representedClassName="Trainings" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="trainingTasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainingTasks" inverseName="training" inverseEntity="TrainingTasks"/>
+    </entity>
+    <entity name="TrainingTasks" representedClassName="TrainingTasks" syncable="YES" codeGenerationType="class">
+        <attribute name="taskDescription" optional="YES" attributeType="String"/>
+        <attribute name="taskDone" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="taskName" optional="YES" attributeType="String"/>
+        <relationship name="training" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trainings" inverseName="trainingTasks" inverseEntity="Trainings"/>
+    </entity>
+    <elements>
+        <element name="Parts" positionX="-371.40234375" positionY="-172.86328125" width="128" height="73"/>
+        <element name="Exercises" positionX="-190.87890625" positionY="-202.7421875" width="128" height="103"/>
+        <element name="Trainings" positionX="9.2890625" positionY="-187.5390625" width="128" height="88"/>
+        <element name="Measurments" positionX="-188.0390625" positionY="-0.75390625" width="128" height="88"/>
+        <element name="TrainingTasks" positionX="18.54296875" positionY="-10.265625" width="128" height="103"/>
+    </elements>
 </model>
