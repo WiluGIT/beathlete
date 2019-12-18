@@ -64,18 +64,18 @@
     cell.detailTextLabel.text=self.trainingTasksArray[indexPath.row].taskDescription;
     return cell;
 }
-/*
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if(editingStyle==UITableViewCellEditingStyleDelete){
-        Trainings *training = self.trainings[indexPath.row];
-        [self.context deleteObject:training];
+        TrainingTasks *trainingTask = self.trainingTasksArray[indexPath.row];
+        [self.context deleteObject:trainingTask];
         [self.delegate saveContext];
-        [self fetchAllTrainings];
+        [self fetchAllTrainingTasks];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 
     }
 }
- */
+ 
 
 #pragma mark - Navigation
 

@@ -67,6 +67,10 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if(editingStyle==UITableViewCellEditingStyleDelete){
         Trainings *training = self.trainings[indexPath.row];
+        NSSet<TrainingTasks*>* trainingTasksToDelete=training.trainingTasks;
+        for (TrainingTasks *task in trainingTasksToDelete) {
+            [self.context deleteObject:task];
+        }
         [self.context deleteObject:training];
         [self.delegate saveContext];
         [self fetchAllTrainings];
