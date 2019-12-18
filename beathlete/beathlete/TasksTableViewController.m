@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "TrainingTasks+CoreDataClass.h"
 #import "TaskAddViewController.h"
-@interface TasksTableViewController ()<UITableViewDataSource>{
+@interface TasksTableViewController ()<UITableViewDataSource,UITableViewDelegate>{
 }
 @property (nonatomic) NSSet<TrainingTasks*>* trainingTasks;
 @property (nonatomic) NSArray<TrainingTasks*>* trainingTasksArray;
@@ -28,8 +28,10 @@
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
     if(self.trainingRoot!=nil){
-         [self fetchAllTrainingTasks];
+        [self fetchAllTrainingTasks];
+
      }
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -41,6 +43,8 @@
     self.trainingTasks=self.trainingRoot.trainingTasks;
     self.trainingTasksArray =[self.trainingTasks allObjects];
 }
+
+    
 
 
 #pragma mark - Table view data source
@@ -62,9 +66,26 @@
     // Configure the cell...
     cell.textLabel.text=self.trainingTasksArray[indexPath.row].taskName;
     cell.detailTextLabel.text=self.trainingTasksArray[indexPath.row].taskDescription;
+    if(self.trainingTasksArray[indexPath.row].taskDone){
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
 
+    if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        self.trainingTasksArray[indexPath.row].taskDone=false;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        self.trainingTasksArray[indexPath.row].taskDone=true;
+    }
+    [self.delegate saveContext];
+}
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if(editingStyle==UITableViewCellEditingStyleDelete){
         TrainingTasks *trainingTask = self.trainingTasksArray[indexPath.row];

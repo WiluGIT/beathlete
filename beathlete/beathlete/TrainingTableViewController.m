@@ -28,6 +28,7 @@
     self.context =self.delegate.persistentContainer.viewContext;
     // Do any additional setup after loading the view.
     [self fetchAllTrainings];
+
 }
 -(void) fetchAllTrainings{
     NSFetchRequest *request= [NSFetchRequest fetchRequestWithEntityName:@"Trainings"];
