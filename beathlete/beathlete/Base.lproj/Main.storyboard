@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="-975" y="512"/>
         </scene>
-        <!--Training Table View Controller-->
+        <!--Trainings-->
         <scene sceneID="QPB-E6-lag">
             <objects>
                 <viewController id="fAS-Qj-9rB" customClass="TrainingTableViewController" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nvB-Jd-xNT" kind="show" id="ddx-DK-7GH"/>
+                                            <segue destination="nvB-Jd-xNT" kind="show" identifier="ShowTrainingTasks" id="ddx-DK-7GH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -91,7 +91,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="STh-xm-qxM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pNL-XR-egz">
+                    <navigationItem key="navigationItem" title="Trainings" id="pNL-XR-egz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PO3-yr-SPk">
                             <connections>
                                 <segue destination="4jm-09-qpK" kind="show" id="ifj-Ja-BU5"/>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Tasks Table View Controller-->
         <scene sceneID="wYM-pT-Ye6">
             <objects>
-                <viewController id="nvB-Jd-xNT" sceneMemberID="viewController">
+                <viewController id="nvB-Jd-xNT" customClass="TasksTableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nCp-ii-aDV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,15 +119,34 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WHn-EI-qBT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTask" textLabel="Yag-kx-pdQ" detailTextLabel="4qV-Op-DDw" style="IBUITableViewCellStyleValue1" id="WHn-EI-qBT">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WHn-EI-qBT" id="7Zx-4q-Uqz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yag-kx-pdQ">
+                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4qV-Op-DDw">
+                                                    <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nvB-Jd-xNT" id="Qr8-lH-K9g"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -136,19 +155,22 @@
                     <navigationItem key="navigationItem" id="rTG-qi-UG4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1NR-Fo-fP5">
                             <connections>
-                                <segue destination="2r2-kT-gcp" kind="show" id="Alo-RO-cuU"/>
+                                <segue destination="2r2-kT-gcp" kind="show" identifier="AddTrainingTasks" id="Alo-RO-cuU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="IOi-vo-vlk" id="c3K-WQ-s5Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5Q-E4-HMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1805.7971014492755" y="810.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Task Add View Controller-->
         <scene sceneID="jOt-Y6-Jyn">
             <objects>
-                <viewController id="2r2-kT-gcp" sceneMemberID="viewController">
+                <viewController id="2r2-kT-gcp" customClass="TaskAddViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQA-Tj-tdj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,14 +206,22 @@
                         <viewLayoutGuide key="safeArea" id="vJZ-tJ-EO8"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Nb-EV-qbU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8om-e0-GSu"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8om-e0-GSu">
+                            <connections>
+                                <action selector="saveTrainingTask:" destination="2r2-kT-gcp" id="tDN-aR-TAg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="exerciseDetailsTextField" destination="nXw-ie-0v1" id="h0C-vk-aNB"/>
+                        <outlet property="exerciseNameTextField" destination="UK8-2A-jmZ" id="FG0-9l-aeP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weq-Zk-z4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2722" y="811"/>
         </scene>
-        <!--Training Add View Controller-->
+        <!--Add Training-->
         <scene sceneID="7FB-0E-x9M">
             <objects>
                 <viewController id="4jm-09-qpK" customClass="TrainingAddViewController" sceneMemberID="viewController">
@@ -227,7 +257,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ieH-de-9t0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SD8-hh-bRt">
+                    <navigationItem key="navigationItem" title="Add Training" id="SD8-hh-bRt">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Vdk-ZS-X5e">
                             <connections>
                                 <action selector="saveTraining:" destination="4jm-09-qpK" id="Sb7-Rx-Xqy"/>
@@ -244,7 +274,7 @@
             </objects>
             <point key="canvasLocation" x="2721.739130434783" y="81.696428571428569"/>
         </scene>
-        <!--Parts Table View Controller-->
+        <!--Body Parts-->
         <scene sceneID="NnP-Ma-D5I">
             <objects>
                 <tableViewController id="C4T-Ul-ko7" customClass="PartsTableViewController" sceneMemberID="viewController">
@@ -270,13 +300,13 @@
                             <outlet property="delegate" destination="C4T-Ul-ko7" id="PI6-Lg-SOV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Phz-8f-zjk"/>
+                    <navigationItem key="navigationItem" title="Body Parts" id="Phz-8f-zjk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAf-Qe-tPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="-632.14285714285711"/>
         </scene>
-        <!--Exercises Table View Controller-->
+        <!--Exercises-->
         <scene sceneID="79P-hC-eHz">
             <objects>
                 <tableViewController id="J5H-ae-fXB" customClass="ExercisesTableViewController" sceneMemberID="viewController">
@@ -302,13 +332,13 @@
                             <outlet property="delegate" destination="J5H-ae-fXB" id="2ne-8N-Vwn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Hfb-Fs-q3E"/>
+                    <navigationItem key="navigationItem" title="Exercises" id="Hfb-Fs-q3E"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcm-HK-Jbq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1806" y="-632"/>
         </scene>
-        <!--Exercise Detail View Controller-->
+        <!--Exercise Detail-->
         <scene sceneID="Gcg-ck-F6L">
             <objects>
                 <viewController id="Hxo-t0-645" customClass="ExerciseDetailViewController" sceneMemberID="viewController">
@@ -342,7 +372,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dzD-Wd-c0N"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yF8-BL-nLh"/>
+                    <navigationItem key="navigationItem" title="Exercise Detail" id="yF8-BL-nLh"/>
                     <connections>
                         <outlet property="exerciseDescriptionLabel" destination="aqC-4a-YbO" id="RgL-t2-nWp"/>
                         <outlet property="exerciseNameLabel" destination="oHf-iR-y0D" id="3Fz-18-tQC"/>

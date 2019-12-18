@@ -27,7 +27,7 @@
     
     //call database initialization
     [self createInitialAppData];
-    //[self deleteAllRecords:@"Exercises"];
+    //[self deleteAllRecords:@"TrainingTasks"];
     return YES;
 }
 

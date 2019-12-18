@@ -17,6 +17,8 @@
 		84B8ED7A23A8FCFC00A51DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7823A8FCFC00A51DE6 /* LaunchScreen.storyboard */; };
 		84B8ED7D23A8FCFC00A51DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED7C23A8FCFC00A51DE6 /* main.m */; };
 		84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */; };
+		84D87C8E23AA9185004C1321 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C8D23AA9185004C1321 /* TasksTableViewController.m */; };
+		84D87C9123AA974D004C1321 /* TaskAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9023AA974D004C1321 /* TaskAddViewController.m */; };
 		84FE9FB523A95FB50072E023 /* PartsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9FB423A95FB50072E023 /* PartsTableViewController.m */; };
 		84FE9FBB23A9645B0072E023 /* ExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9FBA23A9645B0072E023 /* ExercisesTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,10 @@
 		84B8ED7C23A8FCFC00A51DE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84BB5E6D23A983B800262C9B /* ExerciseDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseDetailViewController.h; sourceTree = "<group>"; };
 		84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseDetailViewController.m; sourceTree = "<group>"; };
+		84D87C8C23AA9185004C1321 /* TasksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
+		84D87C8D23AA9185004C1321 /* TasksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
+		84D87C8F23AA974D004C1321 /* TaskAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskAddViewController.h; sourceTree = "<group>"; };
+		84D87C9023AA974D004C1321 /* TaskAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskAddViewController.m; sourceTree = "<group>"; };
 		84FE9FB323A95FB50072E023 /* PartsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartsTableViewController.h; sourceTree = "<group>"; };
 		84FE9FB423A95FB50072E023 /* PartsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartsTableViewController.m; sourceTree = "<group>"; };
 		84FE9FB923A9645B0072E023 /* ExercisesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExercisesTableViewController.h; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 				840218B323AA74AB00B0631A /* TrainingTableViewController.m */,
 				840218B523AA772F00B0631A /* TrainingAddViewController.h */,
 				840218B623AA772F00B0631A /* TrainingAddViewController.m */,
+				84D87C8C23AA9185004C1321 /* TasksTableViewController.h */,
+				84D87C8D23AA9185004C1321 /* TasksTableViewController.m */,
+				84D87C8F23AA974D004C1321 /* TaskAddViewController.h */,
+				84D87C9023AA974D004C1321 /* TaskAddViewController.m */,
 			);
 			path = beathlete;
 			sourceTree = "<group>";
@@ -175,9 +185,11 @@
 				840218B423AA74AB00B0631A /* TrainingTableViewController.m in Sources */,
 				84B8ED6923A8FCF900A51DE6 /* AppDelegate.m in Sources */,
 				840218B723AA772F00B0631A /* TrainingAddViewController.m in Sources */,
+				84D87C8E23AA9185004C1321 /* TasksTableViewController.m in Sources */,
 				84FE9FB523A95FB50072E023 /* PartsTableViewController.m in Sources */,
 				84B8ED6C23A8FCF900A51DE6 /* SceneDelegate.m in Sources */,
 				84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */,
+				84D87C9123AA974D004C1321 /* TaskAddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
