@@ -137,6 +137,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="69"/>
                                 <state key="normal" title="Button" image="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="wrS-JS-EgU" eventType="touchUpInside" id="NkY-TI-Mct"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N1M-UR-lLx">
                                 <rect key="frame" x="20" y="530" width="374" height="261"/>
@@ -154,6 +157,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="N1M-UR-lLx" id="IC4-BU-vxs"/>
                         <outlet property="measurmentDatePicker" destination="Zrq-bh-guE" id="29M-Mm-j1b"/>
                         <outlet property="weightTextField" destination="wZU-mN-7b8" id="gzR-q1-Hga"/>
                     </connections>

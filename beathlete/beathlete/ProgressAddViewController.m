@@ -10,7 +10,7 @@
 @import CoreData;
 #import "AppDelegate.h"
 #import "Measurments+CoreDataClass.h"
-@interface ProgressAddViewController ()
+@interface ProgressAddViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *weightTextField;
 @property (weak, nonatomic) IBOutlet UIDatePicker *measurmentDatePicker;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -34,6 +34,34 @@
     measurment.measurmentDate=measuremntDate;
     [self.delegate saveContext];
     [self.navigationController popViewControllerAnimated:YES];
+}
+- (IBAction)openCamera:(id)sender {
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+        UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+        pickerController.delegate=self;
+        [pickerController setSourceType:UIImagePickerControllerSourceTypeCamera];
+        pickerController.allowsEditing=YES;
+        [self presentViewController:pickerController animated:YES completion:nil];
+        
+        
+    }else{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"We have problem" message:@"Your device doest not have a camera!" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    UIImage *image = info[UIImagePickerControllerEditedImage];
+    self.imageView.image=image;
 }
 
 
