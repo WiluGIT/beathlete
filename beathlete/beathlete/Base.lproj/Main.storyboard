@@ -106,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="81.696428571428569"/>
         </scene>
-        <!--Tasks Table View Controller-->
+        <!--Press to mark as done-->
         <scene sceneID="wYM-pT-Ye6">
             <objects>
                 <viewController id="nvB-Jd-xNT" customClass="TasksTableViewController" sceneMemberID="viewController">
@@ -151,9 +151,10 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="hll-h7-JUp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rTG-qi-UG4">
+                    <navigationItem key="navigationItem" title="Press to mark as done" id="rTG-qi-UG4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1NR-Fo-fP5">
                             <connections>
                                 <segue destination="2r2-kT-gcp" kind="show" identifier="AddTrainingTasks" id="Alo-RO-cuU"/>
@@ -202,6 +203,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="635-2c-bVF">
+                                <rect key="frame" x="0.0" y="319" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2r2-kT-gcp" id="UtH-su-zqb"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CTF-ov-dkF">
+                                <rect key="frame" x="0.0" y="363" width="414" height="450"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellExerciseSearch" id="776-ac-xxb">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="776-ac-xxb" id="85Q-Wo-xca">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2r2-kT-gcp" id="u8F-mT-yPb"/>
+                                    <outlet property="delegate" destination="2r2-kT-gcp" id="iyY-76-RkB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vJZ-tJ-EO8"/>
@@ -216,11 +244,13 @@
                     <connections>
                         <outlet property="exerciseDetailsTextField" destination="nXw-ie-0v1" id="h0C-vk-aNB"/>
                         <outlet property="exerciseNameTextField" destination="UK8-2A-jmZ" id="FG0-9l-aeP"/>
+                        <outlet property="exerciseSearchBar" destination="635-2c-bVF" id="SfO-OP-TAm"/>
+                        <outlet property="searchTableView" destination="CTF-ov-dkF" id="4IK-Ee-ZGh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weq-Zk-z4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722" y="811"/>
+            <point key="canvasLocation" x="2721.739130434783" y="810.9375"/>
         </scene>
         <!--Add Training-->
         <scene sceneID="7FB-0E-x9M">

@@ -66,6 +66,8 @@
     // Configure the cell...
     cell.textLabel.text=self.trainingTasksArray[indexPath.row].taskName;
     cell.detailTextLabel.text=self.trainingTasksArray[indexPath.row].taskDescription;
+
+    
     if(self.trainingTasksArray[indexPath.row].taskDone){
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }else{
@@ -96,7 +98,6 @@
 
     }
 }
- 
 
 #pragma mark - Navigation
 
@@ -108,7 +109,17 @@
      TaskAddViewController *controller=(TaskAddViewController*)segue.destinationViewController;
      Trainings *selectedTraining= self.trainingRoot;
      controller.self.trainingTaskRoot=selectedTraining;
+    }/*else if ([segue.identifier isEqualToString:@"EditTrainingTasks"]){
+        TaskAddViewController *controller=(TaskAddViewController*)segue.destinationViewController;
+        Trainings *selectedTraining= self.trainingRoot;
+        UITableViewCell *cell = (UITableViewCell*) sender;
+        NSIndexPath *indexPath =[self.tableView indexPathForCell:cell];
+        TrainingTasks *selectedTrainingTaskToEdit = self.trainingTasksArray[indexPath.row];
+        controller.trainingTaskToEdit=selectedTrainingTaskToEdit;
+        controller.trainingTaskRoot=selectedTraining;
     }
+    */
+    
 }
 
 
