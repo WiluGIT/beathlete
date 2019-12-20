@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic) NSManagedObjectContext *context;
 @property (nonatomic,weak) AppDelegate *delegate;
+@property (nonatomic) Measurments* measurmentToAdd;
 @end
 
 @implementation ProgressAddViewController
@@ -25,13 +26,14 @@
     // Do any additional setup after loading the view.
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
+    self.measurmentToAdd=[[Measurments alloc]initWithContext:self.context];
 }
 - (IBAction)saveMeasurment:(id)sender {
     double measurmentWeight=[self.weightTextField.text doubleValue];
     NSDate *measuremntDate=self.measurmentDatePicker.date;
-    Measurments *measurment =[[Measurments alloc] initWithContext:self.context];
-    measurment.weight=measurmentWeight;
-    measurment.measurmentDate=measuremntDate;
+    //Measurments *measurment =[[Measurments alloc] initWithContext:self.context];
+    self.measurmentToAdd.weight=measurmentWeight;
+    self.measurmentToAdd.measurmentDate=measuremntDate;
     [self.delegate saveContext];
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -62,6 +64,8 @@
     
     UIImage *image = info[UIImagePickerControllerEditedImage];
     self.imageView.image=image;
+    NSData *imageData = [NSData dataWithData:UIImagePNGRepresentation(image)];
+    self.measurmentToAdd.image=imageData;
 }
 
 

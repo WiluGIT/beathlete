@@ -10,7 +10,7 @@
 @import CoreData;
 #import "AppDelegate.h"
 #import "Measurments+CoreDataProperties.h"
-
+#import "ProgressDetailViewController.h"
 @interface ProgressTableViewController ()<UITableViewDataSource>
 @property (nonatomic) NSManagedObjectContext *context;
 @property (nonatomic,weak) AppDelegate *delegate;
@@ -72,14 +72,21 @@
     }
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"ShowMeasurmentDetail"]){
+        ProgressDetailViewController *controller=(ProgressDetailViewController*)segue.destinationViewController;
+        UITableViewCell *cell = (UITableViewCell*) sender;
+        NSIndexPath *indexPath =[self.tableView indexPathForCell:cell];
+        Measurments *selectedMeasurment= self.measurmentsArray[indexPath.row];
+        controller.self.measurmentToShowDetail=selectedMeasurment;
+    }
 }
-*/
+
 
 @end
