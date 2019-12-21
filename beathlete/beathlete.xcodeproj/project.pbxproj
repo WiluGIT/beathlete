@@ -11,12 +11,12 @@
 		840218B723AA772F00B0631A /* TrainingAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840218B623AA772F00B0631A /* TrainingAddViewController.m */; };
 		84B8ED6923A8FCF900A51DE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */; };
 		84B8ED6C23A8FCF900A51DE6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED6B23A8FCF900A51DE6 /* SceneDelegate.m */; };
-		84B8ED7223A8FCF900A51DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7023A8FCF900A51DE6 /* Main.storyboard */; };
 		84B8ED7523A8FCF900A51DE6 /* beathlete.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED7323A8FCF900A51DE6 /* beathlete.xcdatamodeld */; };
 		84B8ED7723A8FCFC00A51DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7623A8FCFC00A51DE6 /* Assets.xcassets */; };
 		84B8ED7A23A8FCFC00A51DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ED7823A8FCFC00A51DE6 /* LaunchScreen.storyboard */; };
 		84B8ED7D23A8FCFC00A51DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED7C23A8FCFC00A51DE6 /* main.m */; };
 		84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */; };
+		84C3E78E23ADAFE20061B744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C3E78C23ADAFE20061B744 /* Main.storyboard */; };
 		84D87C8E23AA9185004C1321 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C8D23AA9185004C1321 /* TasksTableViewController.m */; };
 		84D87C9123AA974D004C1321 /* TaskAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9023AA974D004C1321 /* TaskAddViewController.m */; };
 		84D87C9A23AC2FF4004C1321 /* ProgressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9923AC2FF4004C1321 /* ProgressTableViewController.m */; };
@@ -36,7 +36,6 @@
 		84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84B8ED6A23A8FCF900A51DE6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		84B8ED6B23A8FCF900A51DE6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		84B8ED7123A8FCF900A51DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B8ED7423A8FCF900A51DE6 /* beathlete.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beathlete.xcdatamodel; sourceTree = "<group>"; };
 		84B8ED7623A8FCFC00A51DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B8ED7923A8FCFC00A51DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		84B8ED7C23A8FCFC00A51DE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84BB5E6D23A983B800262C9B /* ExerciseDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseDetailViewController.h; sourceTree = "<group>"; };
 		84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseDetailViewController.m; sourceTree = "<group>"; };
+		84C3E78D23ADAFE20061B744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D87C8C23AA9185004C1321 /* TasksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
 		84D87C8D23AA9185004C1321 /* TasksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
 		84D87C8F23AA974D004C1321 /* TaskAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskAddViewController.h; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */,
 				84B8ED6A23A8FCF900A51DE6 /* SceneDelegate.h */,
 				84B8ED6B23A8FCF900A51DE6 /* SceneDelegate.m */,
-				84B8ED7023A8FCF900A51DE6 /* Main.storyboard */,
+				84C3E78C23ADAFE20061B744 /* Main.storyboard */,
 				84B8ED7623A8FCFC00A51DE6 /* Assets.xcassets */,
 				84B8ED7823A8FCFC00A51DE6 /* LaunchScreen.storyboard */,
 				84B8ED7B23A8FCFC00A51DE6 /* Info.plist */,
@@ -181,9 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C3E78E23ADAFE20061B744 /* Main.storyboard in Resources */,
 				84B8ED7A23A8FCFC00A51DE6 /* LaunchScreen.storyboard in Resources */,
 				84B8ED7723A8FCFC00A51DE6 /* Assets.xcassets in Resources */,
-				84B8ED7223A8FCF900A51DE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,20 +214,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84B8ED7023A8FCF900A51DE6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84B8ED7123A8FCF900A51DE6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84B8ED7823A8FCFC00A51DE6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84B8ED7923A8FCFC00A51DE6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84C3E78C23ADAFE20061B744 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C3E78D23ADAFE20061B744 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
     if(self.exerciseToShowDetail!=nil){
         [self fetchExerciseDetails];
     }
