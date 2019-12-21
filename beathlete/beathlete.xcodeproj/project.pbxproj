@@ -17,6 +17,10 @@
 		84B8ED7D23A8FCFC00A51DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ED7C23A8FCFC00A51DE6 /* main.m */; };
 		84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */; };
 		84C3E78E23ADAFE20061B744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C3E78C23ADAFE20061B744 /* Main.storyboard */; };
+		84C3E79023AE54DE0061B744 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C3E78F23AE54DE0061B744 /* fa-solid-900.ttf */; };
+		84C3E79223AE55B60061B744 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C3E79123AE55B60061B744 /* fa-regular-400.ttf */; };
+		84C3E79523AE5D570061B744 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E79423AE5D570061B744 /* MainTabBarController.m */; };
+		84C3E79723AE627A0061B744 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C3E79623AE62790061B744 /* fa-brands-400.ttf */; };
 		84D87C8E23AA9185004C1321 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C8D23AA9185004C1321 /* TasksTableViewController.m */; };
 		84D87C9123AA974D004C1321 /* TaskAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9023AA974D004C1321 /* TaskAddViewController.m */; };
 		84D87C9A23AC2FF4004C1321 /* ProgressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9923AC2FF4004C1321 /* ProgressTableViewController.m */; };
@@ -44,6 +48,11 @@
 		84BB5E6D23A983B800262C9B /* ExerciseDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseDetailViewController.h; sourceTree = "<group>"; };
 		84BB5E6E23A983B800262C9B /* ExerciseDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseDetailViewController.m; sourceTree = "<group>"; };
 		84C3E78D23ADAFE20061B744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C3E78F23AE54DE0061B744 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-solid-900.ttf"; path = "../../../../../Downloads/fontawesome-free-5.12.0-web/webfonts/fa-solid-900.ttf"; sourceTree = "<group>"; };
+		84C3E79123AE55B60061B744 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-regular-400.ttf"; path = "../../../../../Downloads/fontawesome-free-5.12.0-web/webfonts/fa-regular-400.ttf"; sourceTree = "<group>"; };
+		84C3E79323AE5D570061B744 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		84C3E79423AE5D570061B744 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		84C3E79623AE62790061B744 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-brands-400.ttf"; path = "../../../../../Downloads/fontawesome-free-5.12.0-web/webfonts/fa-brands-400.ttf"; sourceTree = "<group>"; };
 		84D87C8C23AA9185004C1321 /* TasksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
 		84D87C8D23AA9185004C1321 /* TasksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
 		84D87C8F23AA974D004C1321 /* TaskAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskAddViewController.h; sourceTree = "<group>"; };
@@ -90,6 +99,9 @@
 		84B8ED6623A8FCF900A51DE6 /* beathlete */ = {
 			isa = PBXGroup;
 			children = (
+				84C3E79623AE62790061B744 /* fa-brands-400.ttf */,
+				84C3E79123AE55B60061B744 /* fa-regular-400.ttf */,
+				84C3E78F23AE54DE0061B744 /* fa-solid-900.ttf */,
 				84B8ED6723A8FCF900A51DE6 /* AppDelegate.h */,
 				84B8ED6823A8FCF900A51DE6 /* AppDelegate.m */,
 				84B8ED6A23A8FCF900A51DE6 /* SceneDelegate.h */,
@@ -120,6 +132,8 @@
 				84D87C9C23AC32D9004C1321 /* ProgressAddViewController.m */,
 				84D87C9E23AC45DE004C1321 /* ProgressDetailViewController.h */,
 				84D87C9F23AC45DE004C1321 /* ProgressDetailViewController.m */,
+				84C3E79323AE5D570061B744 /* MainTabBarController.h */,
+				84C3E79423AE5D570061B744 /* MainTabBarController.m */,
 			);
 			path = beathlete;
 			sourceTree = "<group>";
@@ -182,7 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C3E78E23ADAFE20061B744 /* Main.storyboard in Resources */,
+				84C3E79223AE55B60061B744 /* fa-regular-400.ttf in Resources */,
+				84C3E79023AE54DE0061B744 /* fa-solid-900.ttf in Resources */,
 				84B8ED7A23A8FCFC00A51DE6 /* LaunchScreen.storyboard in Resources */,
+				84C3E79723AE627A0061B744 /* fa-brands-400.ttf in Resources */,
 				84B8ED7723A8FCFC00A51DE6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +222,7 @@
 				84D87CA023AC45DE004C1321 /* ProgressDetailViewController.m in Sources */,
 				84B8ED6C23A8FCF900A51DE6 /* SceneDelegate.m in Sources */,
 				84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */,
+				84C3E79523AE5D570061B744 /* MainTabBarController.m in Sources */,
 				84D87C9123AA974D004C1321 /* TaskAddViewController.m in Sources */,
 				84D87C9A23AC2FF4004C1321 /* ProgressTableViewController.m in Sources */,
 				84D87C9D23AC32D9004C1321 /* ProgressAddViewController.m in Sources */,
