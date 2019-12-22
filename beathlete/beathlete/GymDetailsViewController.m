@@ -31,6 +31,13 @@
     self.gymNameLabel.text=gymName;
     self.gymLocationLabel.text=gymLocation;
 }
+- (IBAction)openMap:(id)sender {
+    UIApplication *app = [UIApplication sharedApplication];
+    NSString *gymLocation= self.gymToShowDetail.name;
+    NSString *urlParam =[gymLocation stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *url=[NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",urlParam];
+    [app openURL:[NSURL URLWithString: url]];
+}
 
 /*
 #pragma mark - Navigation
