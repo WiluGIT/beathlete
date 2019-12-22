@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.h
+//  GymsTableViewController.h
 //  beathlete
 //
 //  Created by Admin on 21/12/2019.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainTabBarController : UITabBarController
+@interface GymsTableViewController : UITableViewController
 
 @end
 
