@@ -23,6 +23,7 @@
 		84C3E79A23AED5B80061B744 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3E79923AED5B80061B744 /* CoreLocation.framework */; };
 		84C3E79D23AED7610061B744 /* GymsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E79C23AED7610061B744 /* GymsTableViewController.m */; };
 		84C3E7A023AEEA0C0061B744 /* Gym.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E79F23AEEA0C0061B744 /* Gym.m */; };
+		84C3E7A323AEF72A0061B744 /* GymDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E7A223AEF72A0061B744 /* GymDetailsViewController.m */; };
 		84D87C8E23AA9185004C1321 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C8D23AA9185004C1321 /* TasksTableViewController.m */; };
 		84D87C9123AA974D004C1321 /* TaskAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9023AA974D004C1321 /* TaskAddViewController.m */; };
 		84D87C9A23AC2FF4004C1321 /* ProgressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9923AC2FF4004C1321 /* ProgressTableViewController.m */; };
@@ -58,6 +59,8 @@
 		84C3E79C23AED7610061B744 /* GymsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymsTableViewController.m; sourceTree = "<group>"; };
 		84C3E79E23AEEA0C0061B744 /* Gym.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gym.h; sourceTree = "<group>"; };
 		84C3E79F23AEEA0C0061B744 /* Gym.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gym.m; sourceTree = "<group>"; };
+		84C3E7A123AEF72A0061B744 /* GymDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GymDetailsViewController.h; sourceTree = "<group>"; };
+		84C3E7A223AEF72A0061B744 /* GymDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymDetailsViewController.m; sourceTree = "<group>"; };
 		84D87C8C23AA9185004C1321 /* TasksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
 		84D87C8D23AA9185004C1321 /* TasksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
 		84D87C8F23AA974D004C1321 /* TaskAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskAddViewController.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				84C3E79C23AED7610061B744 /* GymsTableViewController.m */,
 				84C3E79E23AEEA0C0061B744 /* Gym.h */,
 				84C3E79F23AEEA0C0061B744 /* Gym.m */,
+				84C3E7A123AEF72A0061B744 /* GymDetailsViewController.h */,
+				84C3E7A223AEF72A0061B744 /* GymDetailsViewController.m */,
 			);
 			path = beathlete;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				84D87C8E23AA9185004C1321 /* TasksTableViewController.m in Sources */,
 				84FE9FB523A95FB50072E023 /* PartsTableViewController.m in Sources */,
 				84D87CA023AC45DE004C1321 /* ProgressDetailViewController.m in Sources */,
+				84C3E7A323AEF72A0061B744 /* GymDetailsViewController.m in Sources */,
 				84B8ED6C23A8FCF900A51DE6 /* SceneDelegate.m in Sources */,
 				84BB5E6F23A983B800262C9B /* ExerciseDetailViewController.m in Sources */,
 				84C3E79D23AED7610061B744 /* GymsTableViewController.m in Sources */,

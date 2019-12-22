@@ -10,6 +10,9 @@
         <array key="fa-brands-400.ttf">
             <string>FontAwesome5Brands-Regular</string>
         </array>
+        <array key="fa-solid-900.ttf">
+            <string>FontAwesome5Free-Solid</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
@@ -265,7 +268,7 @@
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="1287.7232142857142"/>
         </scene>
-        <!--Gyms Table View Controller-->
+        <!--Gyms-->
         <scene sceneID="K3h-vo-Q31">
             <objects>
                 <tableViewController id="iZb-rd-5KD" customClass="GymsTableViewController" sceneMemberID="viewController">
@@ -281,6 +284,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8su-tf-WH6" kind="show" identifier="ShowGymDetails" id="Pwd-Bd-g3d"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -288,7 +294,7 @@
                             <outlet property="delegate" destination="iZb-rd-5KD" id="tci-RK-Gkp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LOo-o2-kVK">
+                    <navigationItem key="navigationItem" title="Gyms" id="LOo-o2-kVK">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="oSu-R5-8iM">
                             <connections>
                                 <action selector="fetchGyms:" destination="iZb-rd-5KD" id="Opy-PU-d6A"/>
@@ -299,6 +305,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLF-wC-XaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="816" y="811"/>
+        </scene>
+        <!--Gym Details View Controller-->
+        <scene sceneID="Mef-Th-bkH">
+            <objects>
+                <viewController id="8su-tf-WH6" customClass="GymDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igi-KD-09A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gym name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d8-2m-s9p">
+                                <rect key="frame" x="25" y="113" width="124" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXw-Gz-gmO">
+                                <rect key="frame" x="25.000000000000004" y="168" width="60.333333333333343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gym location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-Eu-Elo">
+                                <rect key="frame" x="25" y="223" width="149" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnY-0d-TZt">
+                                <rect key="frame" x="25" y="278" width="26.333333333333329" height="35"/>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="35"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiB-ii-YRQ">
+                                <rect key="frame" x="56.333333333333336" y="278" width="85.666666666666657" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2E6-Eu-Elo" firstAttribute="leading" secondItem="EEa-ak-llw" secondAttribute="leading" constant="25" id="0dC-z6-exd"/>
+                            <constraint firstItem="hXw-Gz-gmO" firstAttribute="leading" secondItem="EEa-ak-llw" secondAttribute="leading" constant="25" id="HaU-XF-qaf"/>
+                            <constraint firstItem="KnY-0d-TZt" firstAttribute="leading" secondItem="EEa-ak-llw" secondAttribute="leading" constant="25" id="VeO-S8-z3J"/>
+                            <constraint firstItem="yiB-ii-YRQ" firstAttribute="top" secondItem="2E6-Eu-Elo" secondAttribute="bottom" constant="25" id="ZHR-ll-uFu"/>
+                            <constraint firstItem="2d8-2m-s9p" firstAttribute="leading" secondItem="EEa-ak-llw" secondAttribute="leading" constant="25" id="g58-2a-DF6"/>
+                            <constraint firstItem="hXw-Gz-gmO" firstAttribute="top" secondItem="2d8-2m-s9p" secondAttribute="bottom" constant="25" id="kTc-hf-Rdq"/>
+                            <constraint firstItem="2E6-Eu-Elo" firstAttribute="top" secondItem="hXw-Gz-gmO" secondAttribute="bottom" constant="25" id="lGd-uN-Jt3"/>
+                            <constraint firstItem="2d8-2m-s9p" firstAttribute="top" secondItem="EEa-ak-llw" secondAttribute="top" constant="25" id="rUU-rD-HtQ"/>
+                            <constraint firstItem="KnY-0d-TZt" firstAttribute="top" secondItem="2E6-Eu-Elo" secondAttribute="bottom" constant="25" id="vRG-9y-aLV"/>
+                            <constraint firstItem="yiB-ii-YRQ" firstAttribute="leading" secondItem="KnY-0d-TZt" secondAttribute="trailing" constant="5" id="ySA-DG-3KN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EEa-ak-llw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tiC-81-kfE"/>
+                    <connections>
+                        <outlet property="gymLocationLabel" destination="yiB-ii-YRQ" id="2SQ-g1-qeV"/>
+                        <outlet property="gymNameLabel" destination="hXw-Gz-gmO" id="9kK-zs-Xn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xsp-Wc-bgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8695652173915" y="810.9375"/>
         </scene>
         <!--Trainings-->
         <scene sceneID="QPB-E6-lag">

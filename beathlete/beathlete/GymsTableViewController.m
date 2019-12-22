@@ -9,6 +9,7 @@
 #import "GymsTableViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "Gym.h"
+#import "GymDetailsViewController.h"
 
 #define API_KEY @"AIzaSyBP5XZhM7zzlix80kcHWn6-WfHengj68VQ"
 CLLocationManager *locationManager;
@@ -114,7 +115,7 @@ CLPlacemark *placeMark;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GymCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text=self.nerbyGyms[indexPath.row].vicinity;
+    cell.textLabel.text=self.nerbyGyms[indexPath.row].name;
     return cell;
 }
 
@@ -153,14 +154,21 @@ CLPlacemark *placeMark;
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"ShowGymDetails"]){
+         GymDetailsViewController *controller=(GymDetailsViewController*)segue.destinationViewController;
+         UITableViewCell *cell = (UITableViewCell*) sender;
+         NSIndexPath *indexPath =[self.tableView indexPathForCell:cell];
+         Gym *selectedGym= self.nerbyGyms[indexPath.row];
+         controller.self.gymToShowDetail=selectedGym;
+     }
 }
-*/
+
 
 @end
