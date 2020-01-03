@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title=NSLocalizedString(@"Exercise Detail", nil);
 
     if(self.exerciseToShowDetail!=nil){
         [self fetchExerciseDetails];

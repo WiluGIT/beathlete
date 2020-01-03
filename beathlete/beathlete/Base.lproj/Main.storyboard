@@ -168,8 +168,11 @@
                     <navigationItem key="navigationItem" title="Measurment Detail" id="sth-9g-pnw"/>
                     <connections>
                         <outlet property="dateLabel" destination="ias-ue-fnQ" id="sAb-gN-Ax9"/>
+                        <outlet property="dateText" destination="JbD-Vh-ozx" id="KWl-60-Ax8"/>
                         <outlet property="imageView" destination="i8w-R4-0jx" id="Ub1-HD-WHf"/>
+                        <outlet property="photoText" destination="amG-xC-nbf" id="BYx-Hf-6aw"/>
                         <outlet property="weightLabel" destination="uXP-I4-r1g" id="bZh-Ur-fZ6"/>
+                        <outlet property="weightText" destination="FaF-8T-o9U" id="anw-os-y4D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HwZ-V6-D8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -259,8 +262,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="DateLabel" destination="iDd-49-zXO" id="3CL-fY-RGH"/>
                         <outlet property="imageView" destination="N1M-UR-lLx" id="IC4-BU-vxs"/>
                         <outlet property="measurmentDatePicker" destination="Zrq-bh-guE" id="29M-Mm-j1b"/>
+                        <outlet property="pictureLabel" destination="ZCj-ee-PRB" id="xDt-RB-9su"/>
+                        <outlet property="weightLabel" destination="6o7-Z3-ojW" id="pnU-Lb-3pP"/>
                         <outlet property="weightTextField" destination="wZU-mN-7b8" id="gzR-q1-Hga"/>
                     </connections>
                 </viewController>
@@ -370,7 +376,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="tiC-81-kfE"/>
                     <connections>
+                        <outlet property="gymLocation" destination="2E6-Eu-Elo" id="6Ve-uK-7w6"/>
                         <outlet property="gymLocationLabel" destination="yiB-ii-YRQ" id="2SQ-g1-qeV"/>
+                        <outlet property="gymName" destination="2d8-2m-s9p" id="hWS-lN-tOH"/>
                         <outlet property="gymNameLabel" destination="hXw-Gz-gmO" id="9kK-zs-Xn5"/>
                     </connections>
                 </viewController>
@@ -447,6 +455,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="showGymButton" destination="VK2-Cc-HAP" id="pTX-6F-d5A"/>
                         <outlet property="tableView" destination="SjS-Y5-JpP" id="cBf-ju-Scc"/>
                     </connections>
                 </viewController>
@@ -609,7 +618,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="exerciseDetailLabel" destination="zlZ-AB-Usc" id="5Lq-Yx-es9"/>
                         <outlet property="exerciseDetailsTextField" destination="nXw-ie-0v1" id="h0C-vk-aNB"/>
+                        <outlet property="exerciseNameLabel" destination="Yi2-DM-PRZ" id="acU-bs-O2M"/>
                         <outlet property="exerciseNameTextField" destination="UK8-2A-jmZ" id="FG0-9l-aeP"/>
                         <outlet property="exerciseSearchBar" destination="635-2c-bVF" id="SfO-OP-TAm"/>
                         <outlet property="searchTableView" destination="CTF-ov-dkF" id="4IK-Ee-ZGh"/>
@@ -672,7 +683,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="saveButton" destination="Vdk-ZS-X5e" id="9mn-ya-HMq"/>
+                        <outlet property="trainingDateLabel" destination="CIK-yI-bVD" id="gCz-Gz-h1v"/>
                         <outlet property="trainingDatePicker" destination="ZmJ-l4-sNn" id="vOz-Tw-mhg"/>
+                        <outlet property="trainingNameLabel" destination="t6g-Ng-kK9" id="6HI-gD-1Wn"/>
                         <outlet property="trainingNameTextField" destination="MKF-H1-rqC" id="nuM-AC-TjF"/>
                     </connections>
                 </viewController>

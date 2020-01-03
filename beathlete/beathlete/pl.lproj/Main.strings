@@ -1,0 +1,129 @@
+
+/* Class = "UIButton"; normalTitle = " Map "; ObjectID = "0aP-zX-gQp"; */
+"0aP-zX-gQp.normalTitle" = " Map ";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "11I-XC-FJw"; */
+"11I-XC-FJw.text" = "Title";
+
+/* Class = "UILabel"; text = "Gym location:"; ObjectID = "2E6-Eu-Elo"; */
+"2E6-Eu-Elo.text" = "Gym location:";
+
+/* Class = "UILabel"; text = "Gym name:"; ObjectID = "2d8-2m-s9p"; */
+"2d8-2m-s9p.text" = "Gym name:";
+
+/* Class = "UITabBarItem"; title = "Training"; ObjectID = "5u9-YV-X7F"; */
+"5u9-YV-X7F.title" = "Training";
+
+/* Class = "UILabel"; text = "Weight:"; ObjectID = "6o7-Z3-ojW"; */
+"6o7-Z3-ojW.text" = "Weight:";
+
+/* Class = "UITabBarItem"; title = "Progress"; ObjectID = "AhI-bW-d7z"; */
+"AhI-bW-d7z.title" = "Progress";
+
+/* Class = "UITabBarItem"; title = "Exercises"; ObjectID = "B6K-km-LEt"; */
+"B6K-km-LEt.title" = "Exercises";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "BaW-XS-M9j"; */
+"BaW-XS-M9j.title" = "Item";
+
+/* Class = "UILabel"; text = "Training date:"; ObjectID = "CIK-yI-bVD"; */
+"CIK-yI-bVD.text" = "Training date:";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "EUQ-HG-2Ds"; */
+"EUQ-HG-2Ds.text" = "Detail";
+
+/* Class = "UILabel"; text = "Weight:"; ObjectID = "FaF-8T-o9U"; */
+"FaF-8T-o9U.text" = "Weight:";
+
+/* Class = "UINavigationItem"; title = "Exercises"; ObjectID = "Hfb-Fs-q3E"; */
+"Hfb-Fs-q3E.title" = "Exercises";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "I1R-il-9iY"; */
+"I1R-il-9iY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "JbD-Vh-ozx"; */
+"JbD-Vh-ozx.text" = "Date:";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "Jln-0X-dFm"; */
+"Jln-0X-dFm.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Gyms"; ObjectID = "LOo-o2-kVK"; */
+"LOo-o2-kVK.title" = "Gyms";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "PPc-FY-zqd"; */
+"PPc-FY-zqd.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Body Parts"; ObjectID = "Phz-8f-zjk"; */
+"Phz-8f-zjk.title" = "Body Parts";
+
+/* Class = "UINavigationItem"; title = "Add Training"; ObjectID = "SD8-hh-bRt"; */
+"SD8-hh-bRt.title" = "Add Training";
+
+/* Class = "UIBarButtonItem"; title = "Show gyms"; ObjectID = "VK2-Cc-HAP"; */
+"VK2-Cc-HAP.title" = "Show gyms";
+
+/* Class = "UINavigationItem"; title = "Measurments"; ObjectID = "Xz0-gq-Bvc"; */
+"Xz0-gq-Bvc.title" = "Measurments";
+
+/* Class = "UINavigationItem"; title = "Add"; ObjectID = "Y1n-4b-D0W"; */
+"Y1n-4b-D0W.title" = "Add";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Yag-kx-pdQ"; */
+"Yag-kx-pdQ.text" = "Title";
+
+/* Class = "UILabel"; text = "Exercise name:"; ObjectID = "Yi2-DM-PRZ"; */
+"Yi2-DM-PRZ.text" = "Exercise name:";
+
+/* Class = "UILabel"; text = "Picture:"; ObjectID = "ZCj-ee-PRB"; */
+"ZCj-ee-PRB.text" = "Picture:";
+
+/* Class = "UILabel"; text = "Photo:"; ObjectID = "amG-xC-nbf"; */
+"amG-xC-nbf.text" = "Photo:";
+
+/* Class = "UIButton"; normalTitle = " YouTube"; ObjectID = "bPg-Bl-HWg"; */
+"bPg-Bl-HWg.normalTitle" = " YouTube";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "hXw-Gz-gmO"; */
+"hXw-Gz-gmO.text" = "name";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "iDd-49-zXO"; */
+"iDd-49-zXO.text" = "Date:";
+
+/* Class = "UILabel"; text = "tmpDate"; ObjectID = "ias-ue-fnQ"; */
+"ias-ue-fnQ.text" = "tmpDate";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "izq-uc-jrw"; */
+"izq-uc-jrw.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "ex. 50kg x 5 x 3"; ObjectID = "nXw-ie-0v1"; */
+"nXw-ie-0v1.placeholder" = "ex. 50kg x 5 x 3";
+
+/* Class = "UILabel"; text = "Exercise"; ObjectID = "oHf-iR-y0D"; */
+"oHf-iR-y0D.text" = "Exercise";
+
+/* Class = "UINavigationItem"; title = "Trainings"; ObjectID = "pNL-XR-egz"; */
+"pNL-XR-egz.title" = "Trainings";
+
+/* Class = "UINavigationItem"; title = "Press to mark as done"; ObjectID = "rTG-qi-UG4"; */
+"rTG-qi-UG4.title" = "Press to mark as done";
+
+/* Class = "UINavigationItem"; title = "Measurment Detail"; ObjectID = "sth-9g-pnw"; */
+"sth-9g-pnw.title" = "Measurment Detail";
+
+/* Class = "UILabel"; text = "Training name:"; ObjectID = "t6g-Ng-kK9"; */
+"t6g-Ng-kK9.text" = "Training name:";
+
+/* Class = "UILabel"; text = "tmpWeight"; ObjectID = "uXP-I4-r1g"; */
+"uXP-I4-r1g.text" = "tmpWeight";
+
+/* Class = "UITextField"; placeholder = "ex. 88.5"; ObjectID = "wZU-mN-7b8"; */
+"wZU-mN-7b8.placeholder" = "ex. 88.5";
+
+/* Class = "UINavigationItem"; title = "Exercise Detail"; ObjectID = "yF8-BL-nLh"; */
+"yF8-BL-nLh.title" = "Exercise Detail";
+
+/* Class = "UILabel"; text = "location"; ObjectID = "yiB-ii-YRQ"; */
+"yiB-ii-YRQ.text" = "location";
+
+/* Class = "UILabel"; text = "Exercise details:"; ObjectID = "zlZ-AB-Usc"; */
+"zlZ-AB-Usc.text" = "Exercise details:";

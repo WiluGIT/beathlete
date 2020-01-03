@@ -21,12 +21,16 @@
 @property (nonatomic) bool isFiltered;
 @property (nonatomic) NSArray <Exercises*>* exercisesToFilter;
 @property (nonatomic) NSMutableArray <Exercises*>* filteredExercises;
+@property (weak, nonatomic) IBOutlet UILabel *exerciseNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *exerciseDetailLabel;
 @end
 
 @implementation TaskAddViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+      self.exerciseNameLabel.text=NSLocalizedString(@"Exercise name", nil);
+    self.exerciseDetailLabel.text=NSLocalizedString(@"Exercise details", nil);
     // Do any additional setup after loading the view.
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;

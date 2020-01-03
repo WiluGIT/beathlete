@@ -12,6 +12,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *weightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *weightText;
+@property (weak, nonatomic) IBOutlet UILabel *dateText;
+@property (weak, nonatomic) IBOutlet UILabel *photoText;
 
 @end
 
@@ -20,6 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   self.weightText.text=NSLocalizedString(@"Weight:", nil);
+    self.dateText.text=NSLocalizedString(@"Date:", nil);
+    self.photoText.text=NSLocalizedString(@"Photo:", nil); self.navigationItem.title=NSLocalizedString(@"Measurment Detail", nil);
     if(self.measurmentToShowDetail!=nil){
         [self fetchMeasurmentDetail];
     }

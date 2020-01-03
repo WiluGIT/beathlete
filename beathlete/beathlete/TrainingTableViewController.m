@@ -14,6 +14,7 @@
 
 @interface TrainingTableViewController ()<UITableViewDataSource>{
 }
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *showGymButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSManagedObjectContext *context;
 @property (nonatomic,weak) AppDelegate *delegate;
@@ -24,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.showGymButton.title=NSLocalizedString(@"Show gyms", nil);
+    self.navigationItem.title=NSLocalizedString(@"Trainings", nil);
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
     // Do any additional setup after loading the view.

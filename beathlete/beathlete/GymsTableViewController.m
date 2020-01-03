@@ -26,6 +26,7 @@ CLPlacemark *placeMark;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=NSLocalizedString(@"Gyms", nil);
     locationManager=[[CLLocationManager alloc] init];
     geocoder=[[CLGeocoder alloc] init];
     [self initLocationManager];
@@ -76,7 +77,7 @@ CLPlacemark *placeMark;
 }
 -(void)locationManager:(CLLocationManager*) manager didFailWithError:(NSError *)error{
     NSLog(@"didFailWithError: %@",error);
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Failed to get your location" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"Failed to get your location", nil) preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
         [self.view setBackgroundColor:[UIColor blueColor]];

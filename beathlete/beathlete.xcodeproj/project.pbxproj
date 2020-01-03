@@ -29,6 +29,7 @@
 		84D87C9A23AC2FF4004C1321 /* ProgressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9923AC2FF4004C1321 /* ProgressTableViewController.m */; };
 		84D87C9D23AC32D9004C1321 /* ProgressAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9C23AC32D9004C1321 /* ProgressAddViewController.m */; };
 		84D87CA023AC45DE004C1321 /* ProgressDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D87C9F23AC45DE004C1321 /* ProgressDetailViewController.m */; };
+		84F8B74223BFA31600CEBFA3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F8B74423BFA31600CEBFA3 /* Localizable.strings */; };
 		84FE9FB523A95FB50072E023 /* PartsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9FB423A95FB50072E023 /* PartsTableViewController.m */; };
 		84FE9FBB23A9645B0072E023 /* ExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9FBA23A9645B0072E023 /* ExercisesTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,10 @@
 		84D87C9C23AC32D9004C1321 /* ProgressAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressAddViewController.m; sourceTree = "<group>"; };
 		84D87C9E23AC45DE004C1321 /* ProgressDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressDetailViewController.h; sourceTree = "<group>"; };
 		84D87C9F23AC45DE004C1321 /* ProgressDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressDetailViewController.m; sourceTree = "<group>"; };
+		84F8B74023BFA2B900CEBFA3 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		84F8B74123BFA2B900CEBFA3 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		84F8B74323BFA31600CEBFA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84F8B74523BFA32700CEBFA3 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84FE9FB323A95FB50072E023 /* PartsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartsTableViewController.h; sourceTree = "<group>"; };
 		84FE9FB423A95FB50072E023 /* PartsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartsTableViewController.m; sourceTree = "<group>"; };
 		84FE9FB923A9645B0072E023 /* ExercisesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExercisesTableViewController.h; sourceTree = "<group>"; };
@@ -124,6 +129,7 @@
 				84B8ED7323A8FCF900A51DE6 /* beathlete.xcdatamodeld */,
 				84FE9FB323A95FB50072E023 /* PartsTableViewController.h */,
 				84FE9FB423A95FB50072E023 /* PartsTableViewController.m */,
+				84F8B74423BFA31600CEBFA3 /* Localizable.strings */,
 				84FE9FB923A9645B0072E023 /* ExercisesTableViewController.h */,
 				84FE9FBA23A9645B0072E023 /* ExercisesTableViewController.m */,
 				84BB5E6D23A983B800262C9B /* ExerciseDetailViewController.h */,
@@ -201,6 +207,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 84B8ED5B23A8FCF900A51DE6;
 			productRefGroup = 84B8ED6523A8FCF900A51DE6 /* Products */;
@@ -220,6 +227,7 @@
 				84C3E78E23ADAFE20061B744 /* Main.storyboard in Resources */,
 				84C3E79223AE55B60061B744 /* fa-regular-400.ttf in Resources */,
 				84C3E79023AE54DE0061B744 /* fa-solid-900.ttf in Resources */,
+				84F8B74223BFA31600CEBFA3 /* Localizable.strings in Resources */,
 				84B8ED7A23A8FCFC00A51DE6 /* LaunchScreen.storyboard in Resources */,
 				84C3E79723AE627A0061B744 /* fa-brands-400.ttf in Resources */,
 				84B8ED7723A8FCFC00A51DE6 /* Assets.xcassets in Resources */,
@@ -260,6 +268,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				84B8ED7923A8FCFC00A51DE6 /* Base */,
+				84F8B74123BFA2B900CEBFA3 /* pl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -268,8 +277,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				84C3E78D23ADAFE20061B744 /* Base */,
+				84F8B74023BFA2B900CEBFA3 /* pl */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F8B74423BFA31600CEBFA3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F8B74323BFA31600CEBFA3 /* en */,
+				84F8B74523BFA32700CEBFA3 /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -337,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title=NSLocalizedString(@"Measurments", nil);
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
     [self fetchAllMeasurments];

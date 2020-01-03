@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *trainingNameTextField;
 @property (weak, nonatomic) IBOutlet UIDatePicker *trainingDatePicker;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UILabel *trainingNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *trainingDateLabel;
 
 @property (nonatomic) NSManagedObjectContext *context;
 @property (nonatomic,weak) AppDelegate *delegate;
@@ -25,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=NSLocalizedString(@"Add Training", nil);
+    self.trainingNameLabel.text=NSLocalizedString(@"Training name", nil);
+    self.trainingDateLabel.text=NSLocalizedString(@"Training date", nil);
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
     // Do any additional setup after loading the view.

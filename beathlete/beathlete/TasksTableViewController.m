@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title=NSLocalizedString(@"Press to mark as done", nil);
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
     if(self.trainingRoot!=nil){

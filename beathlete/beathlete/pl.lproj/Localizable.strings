@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  beathlete
+
+  Created by Admin on 03/01/2020.
+  Copyright © 2020 Admin. All rights reserved.
+*/
+"Body Parts"="Części ciała";
+"Exercises"="Ćwiczenia";
+"Exercise Detail"="Opis ćwiczenia";
+"Show gyms"="Siłownie";
+"Trainings"="Treningi";
+"Add Training"="Dodaj trening";
+"Gyms"="Siłownie";
+"Press to mark as done"="Zaznacz zadania";
+"Measurments"="Pomiary";
+"Add"="Dodaj";
+"Measurment Detail"="Szczegóły pomiaru";
+"Training name"="Nazwa treningu:";
+"Training date"="Data treningu:";
+"Gym name"="Nazwa siłowni:";
+"Gym location"="Lokalizacja siłowni:";
+"Exercise name"="Nazwa ćwiczenia:";
+"Exercise details"="Szczegóły ćwiczenia:";
+"Weight:"="Waga:";
+"Date:"="Data:";
+"Photo:"="Zdjęcie:";
+"Failed to get your location"="Nie udało się pobranie twojej lokalizacji";
+"We have problem"="Wystąpił problem";
+"Your device doest not have a camera!"="Nie udało się uzyskać dostępu do kamery";
+"Error"="Błąd";

@@ -11,6 +11,8 @@
 @interface GymDetailsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *gymNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *gymLocationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gymName;
+@property (weak, nonatomic) IBOutlet UILabel *gymLocation;
 
 @end
 
@@ -18,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.gymName.text=NSLocalizedString(@"Gym name", nil);
+    self.gymLocation.text=NSLocalizedString(@"Gym location", nil);
     // Do any additional setup after loading the view.
     if(self.gymToShowDetail!=nil){
         [self fetchGymDetail];

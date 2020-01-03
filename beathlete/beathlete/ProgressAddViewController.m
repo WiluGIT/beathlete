@@ -17,6 +17,9 @@
 @property (nonatomic) NSManagedObjectContext *context;
 @property (nonatomic,weak) AppDelegate *delegate;
 @property (nonatomic) Measurments* measurmentToAdd;
+@property (weak, nonatomic) IBOutlet UILabel *weightLabel;
+@property (weak, nonatomic) IBOutlet UILabel *DateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pictureLabel;
 @end
 
 @implementation ProgressAddViewController
@@ -24,6 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   self.weightLabel.text=NSLocalizedString(@"Weight:", nil);
+    self.DateLabel.text=NSLocalizedString(@"Date:", nil);
+    self.pictureLabel.text=NSLocalizedString(@"Photo:", nil);
+    self.navigationItem.title=NSLocalizedString(@"Add", nil);
     self.delegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.context =self.delegate.persistentContainer.viewContext;
     self.measurmentToAdd=[[Measurments alloc]initWithContext:self.context];
@@ -47,7 +54,7 @@
         
         
     }else{
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"We have problem" message:@"Your device doest not have a camera!" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"We have problem", nil) message:NSLocalizedString(@"Your device doest not have a camera!", nil) preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         }];
         [alert addAction:action];

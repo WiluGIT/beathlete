@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  beathlete
+
+  Created by Admin on 03/01/2020.
+  Copyright © 2020 Admin. All rights reserved.
+*/
+"Body Parts"="Body Parts";
+"Exercises"="Exercises";
+"Exercise Detail"="Exercise Detail";
+"Show gyms"="Show gyms";
+"Trainings"="Trainings";
+"Add Training"="Add Training";
+"Gyms"="Gyms";
+"Press to mark as done"="Press to mark as done";
+"Measurments"="Measurments";
+"Add"="Add";
+"Measurment Detail"="Measurment Detail";
+"Training name"="Training name:";
+"Training date"="Training date:";
+"Gym name"="Gym name:";
+"Gym location"="Gym location:";
+"Exercise name"="Exercise name:";
+"Exercise details"="Exercise details:";
+"Weight:"="Weight:";
+"Date:"="Date:";
+"Photo:"="Photo:";
+"Failed to get your location"="Failed to get your location";
+"We have problem"="We have problem";
+"Your device doest not have a camera!"="Your device does not have camera!";
+"Error"="Error";
