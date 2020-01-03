@@ -21,10 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //test
     self.navigationItem.title=NSLocalizedString(@"Body Parts", nil);
-    self.tabBarItem.title=@"FSAFSA";
-    //end
     self.delegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     self.context=self.delegate.persistentContainer.viewContext;
     [self fetchAllParts];
@@ -60,6 +57,7 @@
     
     // Configure the cell...
     cell.textLabel.text=self.parts[indexPath.row].name;
+    cell.imageView.image=[UIImage imageNamed:self.parts[indexPath.row].name];
     return cell;
 }
 
