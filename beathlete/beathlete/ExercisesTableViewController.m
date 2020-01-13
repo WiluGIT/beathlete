@@ -61,7 +61,7 @@
     
     // Configure the cell...
     cell.textLabel.text=self.exercisesArray[indexPath.row].exerciseName;
-    
+    cell.detailTextLabel.text=@"";
     return cell;
 }
 
